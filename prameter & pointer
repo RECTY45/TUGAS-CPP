@@ -1,0 +1,43 @@
+#include <iostream>
+using namespace std;
+    
+    void tampil(string nama,string nim,string kelas)
+    {
+        cout << "=====Menampilkan Nama Menggunakan Prameter=======\n";
+        cout << "Nama  : " << nama << endl;
+        cout << "NIM   : " << nim << endl;
+        cout << "Kelas : " << kelas;
+    }
+    
+  void array(int count[2][3]) 
+  {
+    cout << count[0][1] << endl;
+  }
+  int hasil;
+    void pointer(int*nilai){
+        *nilai=*nilai+1;
+        cout << *nilai;
+    }
+    int main(){
+        
+        tampil("Fery Fadul Rahman","20232125013","S.102");
+        
+       int count[2][3] = {
+            {12, 23, 56},
+            {34, 33, 36}
+        };
+    
+    array(count);
+
+cout << "========Menampilkan Data array Menggunakan Prameter: =========\n";
+    for (int i = 0; i < 2; ++i) {
+        for (int j = 0; j < 3; ++j) {
+            cout << count[i][j] << " ";
+        }
+        cout << endl;
+    }
+    
+    cout << "======Menampilkan Data Pointer Menggunakan Prameter: =======\n";
+    pointer(&hasil);
+    return 0;
+}
