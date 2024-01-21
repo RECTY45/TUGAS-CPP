@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int p = 8;
+int l = 5;
+
+int LSegiEmpat();
+
+int main()
+{
+    string nama, nim, kelas;
+    nama = "Fery Fadul Rahman";
+    nim = "20232125013";
+    kelas = "S.102";
+
+    cout << "===========================\n";
+    cout << "Nama  : " << nama << endl;
+    cout << "NIM   : " << nim << endl;
+    cout << "Kelas : " << kelas << endl;
+    cout << "===========================\n";
+
+    cout << "Luas Segi Empat: " << LSegiEmpat() << endl;
+
+    return 0;
+}
+
+int LSegiEmpat()
+{
+    int kel = 2 * (p * l);
+    return kel;
+}
