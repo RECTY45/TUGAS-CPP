@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+    void name(string name1){
+        cout << "Masukkan Nama : " << name1 << endl;
+    }
+    void name(string name2, string name3){
+        cout << "Masukkan Nama : " << name2 << endl;
+        cout << "Masukkan Nama : " << name3 << endl;
+    }
+    int main(){
+        name("Fery Fadul Rahman");
+        name("Muh Bintang", "Zhaka Hidayat Yasir");
+        return 0;
+    }
